@@ -7,16 +7,19 @@ public class Main {
 
 
 
-        int Savings = 15000;
+        int savings = 15000;
         int total = 0;
         int month = 0;
         while (total<2_459_000) {
 
             total = total/100 + total;
-            total = total + Savings;
+            total = total + savings;
             month = month + 1;
 
            System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");}
+
+
+
 
 
 
@@ -44,7 +47,7 @@ public class Main {
         int year = 0;
         while (year<10){
             year++;
-            people= (people+birthRate)-die;
+            people= people+birthRate-die;
             System.out.println("Год "+ year + " численность населения составляет " + people);}
 
 
@@ -78,7 +81,7 @@ public class Main {
         int saving = 15000;
         int years = 0;
 
-        for ( ;totalSum< 12_000_000;years++){
+        for (totalSum=0 ;totalSum< 12_000_000;years++){
 
             totalSum = (totalSum/100*7) + totalSum;
             totalSum = totalSum + saving;
@@ -99,14 +102,14 @@ public class Main {
 
 
         int sum= 0;
-        int savings = 15000;
+        int savings1 = 15000;
 
 
         for (int months=0 ;months<=108;months++){
 
-            sum = (sum/100*7) + sum;
-            sum = sum + savings;
-            if (months%6==0)
+        sum = (sum/100*7) + sum;
+        sum = sum + savings1;
+        if (months%6==0)
 
 
              {
